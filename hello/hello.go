@@ -1,14 +1,11 @@
-package hello
+package main
 
 import (
-	quoteV3 "rsc.io/quote/v3"
+	"example.com/greetings"
+	"fmt"
 )
 
-func Hello() string {
-	//return quote.Hello()
-	return quoteV3.HelloV3()
-}
-
-func Proverb() string {
-	return quoteV3.Concurrency()
+func main() {
+	message := greetings.Hello("Gladys")
+	fmt.Println(message)
 }

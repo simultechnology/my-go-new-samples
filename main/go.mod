@@ -1,3 +1,7 @@
 module main
 
-require hello/hello v0.0.0
+go 1.16
+
+replace example.com/hello_prev => ../hello-prev
+
+require example.com/hello_prev v0.0.0-00010101000000-000000000000
